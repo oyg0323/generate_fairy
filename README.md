@@ -45,35 +45,34 @@ This project creates an interactive fairy tale experience for children using GPT
 - `fairy.json`: Predefined fairy tale templates.
 - `save_fairy.json`: Stores user-generated stories for retrieval.
 
-## How It Works
-
-1. **Story Initiation:**
-   - The user selects a predefined story template or starts a new story.
-   - GPT generates the opening scene and presents four choices.
-2. **User Interaction:**
-   - Children select an option to progress the story.
-   - Based on the choice, GPT generates the next part of the story along with new options.
-3. **Narration and Visuals:**
-   - TTS narrates the story.
-   - Relevant illustrations are displayed.
-4. **Saving Stories:**
-   - Stories can be saved and resumed later.
-
 ## Setup Instructions
 
-1. **Install Dependencies:**
-   - Required Python packages: `gradio`, `openai`, `gtts`, `PyQt5`
-   - Install via pip:
-     ```bash
-     pip install gradio openai gtts PyQt5
+### Prerequisites
+- Python 3.8 or above.
+- Required Python packages: `gradio`, `openai`, `gtts`.
+
+### Installation Steps
+1. **Clone the Repository:**
+   ```bash
+   git clone <repository_url>
+   cd <repository_folder>
+   ```
+2. **Install Dependencies:**
+   ```bash
+   pip install gradio openai gtts
+   ```
+3. **Set Up API Keys:**
+   - Add your OpenAI API key in the `initial.py` file:
+     ```python
+     api_key = 'your_openai_api_key_here'
      ```
-2. **Run the Application:**
-   - Launch the app with:
-     ```bash
-     python main.py
-     ```
-3. **API Keys:**
-   - Add your OpenAI API key and other required credentials in `initial.py`.
+
+### Run the Application
+1. Launch the app using the following command:
+   ```bash
+   python structure.py
+   ```
+2. Open the provided Gradio link in your web browser.
 
 ## Usage
 
